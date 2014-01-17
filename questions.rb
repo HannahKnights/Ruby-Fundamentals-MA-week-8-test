@@ -85,6 +85,7 @@ end
 
 # return the longest word in an array
 def longest_word_in_array(array)
+  array.sort {|a,b| b.length <=> a.length}.fetch(0)
 end
 
 # add up all the numbers in an array, so [1, 3, 5, 6]
