@@ -184,6 +184,11 @@ end
 # 'the lion the witch and the wardrobe' becomes
 # 'The Lion the Witch and the Wardrobe'
 def titleize_a_string(string)
+  little_words = ['a', 'and', 'the']
+  titleize = string.split(' ').map.each_with_index do |word, index|
+    little_words.grep(word) == [] || index == 0 ? word.capitalize : word
+  end
+  titleize*(' ')
 end
 
 # return true if a string contains any special characters
