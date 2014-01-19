@@ -231,6 +231,12 @@ end
 # the list of bank holidays is here:
 # https://www.gov.uk/bank-holidays
 def is_a_2014_bank_holiday?(date)
+  bank_holidays = Array.new.insert(0, '1','1','4','18','4','21','5','5','5','26','8','25','12','25','12','26').each_slice(2).to_a
+  matching = []
+  bank_holidays.each do |holiday_date|
+    (date <=> Time.new(2014, holiday_date[0], holiday_date[1])) == 0 ? matching << holiday_date : false
+  end
+  !matching.empty?
 end
 
 # given your birthday this year, this method tells you
