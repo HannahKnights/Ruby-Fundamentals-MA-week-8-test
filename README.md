@@ -1,4 +1,7 @@
-## Friday test
+Ruby Revision
+========
+
+### Friday test
 
 [Makers Academy](http://www.makersacademy.com) traditional Friday test. This will be testing the basics of Ruby, the building blocks of the course. Here is the premise:
 
