@@ -9,7 +9,7 @@ There are 41 questions - you don't have to do every single one (although if you 
 
 You should be able to answer most questions with a couple of lines of code, and just a few methods. If you're writing a long, complex solution, there's probably a better way.
 
-To run the specs, just run
+To run the specs:
 
 ~~~
 $ rspec questions_spec.rb
